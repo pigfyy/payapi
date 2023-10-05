@@ -2,6 +2,7 @@ import "./globals.css";
 import { DM_Serif_Display, Public_Sans } from "next/font/google";
 
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const serif = DM_Serif_Display({
   weight: "400",
@@ -16,13 +17,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const pathname = children?.props?.childProp?.segment;
-  console.log(pathname);
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
-      <body>
+      <body className="relative overflow-x-hidden">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
