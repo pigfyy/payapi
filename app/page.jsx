@@ -7,13 +7,31 @@ export default function Home() {
       <main>
         {/* Main */}
         <div className="bg-[#EDF3F8]">
-          <div className="mx-auto flex max-w-[1600px] flex-col gap-6 px-6 pb-20 md:items-center md:gap-12 md:px-10 md:pt-2 lg:flex lg:flex-row-reverse lg:px-40 lg:pt-6">
+          <div className="relative mx-auto flex max-w-[1600px] flex-col gap-6 px-6 pb-20 md:items-center md:gap-12 md:px-10 md:pt-2 lg:flex lg:flex-row-reverse lg:px-40 lg:pt-6">
             <Image
               src="/images/home/desktop/illustration-phone-mockup.svg"
               alt="Phone mockup"
               width={128}
               height={240}
-              className="md:height-[300px] z-20 mx-auto md:w-[159px] lg:h-[498px] lg:w-[257px]"
+              className="md:height-[300px] z-40 mx-auto md:w-[159px] lg:h-[498px] lg:w-[257px]"
+            />
+            {/* Mobile Circle */}
+            <div className="pointer-events-none absolute left-0 z-30 min-h-screen w-[150%] md:hidden">
+              <Image
+                src="/images/shared/desktop/bg-pattern-circle.svg"
+                alt="Circle"
+                width={780}
+                height={780}
+                className="absolute top-0 w-full translate-x-[-16.5%] translate-y-[-75%] min-[440px]:translate-y-[-85%] md:hidden"
+              />
+            </div>
+            {/* Desktop Circle */}
+            <Image
+              src="/images/shared/desktop/bg-pattern-circle.svg"
+              alt="Circle"
+              width={780}
+              height={780}
+              className="absolute right-0 top-0 z-10 hidden translate-x-[30%] translate-y-[-45%] lg:block"
             />
             <div className="flex flex-col gap-6 text-center md:items-center md:gap-12 md:text-left lg:items-start">
               <h1 className="text-center font-serif text-h3-l leading-[36px] tracking-[-0.246px] text-blue-grey md:w-[75%] md:text-h2 md:leading-h2 md:tracking-[-0.369px] lg:text-left lg:text-h1-l lg:leading-h1-l lg:tracking-[0.554px]">
