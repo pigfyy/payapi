@@ -3,8 +3,26 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="bg-dark-grey">
-      <div className="mx-auto flex max-w-[1600px] flex-col items-center px-8 py-10 md:flex-row md:items-center md:justify-between md:px-10 lg:px-40">
+    <div className="relative overflow-hidden bg-dark-grey">
+      {/* Mobile Circle */}
+      <div className="pointer-events-none absolute w-[150%] md:hidden">
+        <Image
+          src="/images/shared/desktop/bg-pattern-circle.svg"
+          alt="Circle"
+          width={1280}
+          height={1280}
+          className="absolute bottom-0 left-0 z-20 translate-x-[-16.4%] translate-y-[130%] min-[470px]:translate-y-[120%]"
+        />
+      </div>
+      {/* Tablet & Desktop Circle */}
+      <Image
+        src="/images/shared/desktop/bg-pattern-circle.svg"
+        alt="Circle"
+        width={1280}
+        height={1280}
+        className="absolute bottom-0 z-20 translate-x-[-16.4%] translate-y-[130%] min-[470px]:translate-y-[120%] md:right-0 md:translate-x-[40%] md:translate-y-[70%]"
+      />
+      <div className="z-30 mx-auto flex max-w-[1600px] flex-col items-center px-8 py-10 md:flex-row md:items-center md:justify-between md:px-10 lg:px-40">
         <div className="md:flex md:gap-16">
           <Image
             src="/images/shared/desktop/logo.svg"

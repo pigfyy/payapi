@@ -55,8 +55,26 @@ export default function Home() {
           </div>
         </div>
         {/* Credibility */}
-        <div className="bg-dark-grey">
-          <div className="mx-auto flex max-w-[1600px] flex-col items-center gap-14 px-6 py-20 md:gap-16 md:px-10 md:py-[88px] lg:flex-row-reverse lg:px-40 lg:py-[100px]">
+        <div className="relative overflow-hidden bg-dark-grey">
+          {/* Mobile & Tablet Circle */}
+          <div className="pointer-events-none absolute left-0 top-0 h-3 w-[150%] md:w-full lg:hidden lg:w-[150%]">
+            <Image
+              src="/images/shared/desktop/bg-pattern-circle.svg"
+              alt="Circle"
+              width={1280}
+              height={1280}
+              className="absolute bottom-0 left-0 translate-x-[-16.7%] translate-y-[30%] min-[480px]:translate-y-[20%] md:left-1/2 md:h-[780px] md:w-[780px] md:translate-x-[-50%] md:translate-y-[30%]"
+            />
+          </div>
+          <div className="relative mx-auto  flex max-w-[1600px] flex-col items-center gap-14 px-6 py-20 md:gap-16 md:px-10 md:py-[88px] lg:flex-row-reverse lg:px-40 lg:py-[100px]">
+            {/* Desktop Circle */}
+            <Image
+              src="/images/shared/desktop/bg-pattern-circle.svg"
+              alt="Circle"
+              width={780}
+              height={780}
+              className="pointer-events-none absolute bottom-0 left-0 hidden translate-x-[-30%] translate-y-[-8%] lg:block"
+            />
             <div className="grid grid-cols-2 place-items-center gap-8 md:grid-cols-3 md:gap-12 lg:w-[100%]">
               <Image
                 src="/images/shared/desktop/tesla.svg"
@@ -211,32 +229,32 @@ export default function Home() {
               <h6 className="font-serif text-h3-l leading-[36px] tracking-[-0.246px] text-blue-grey md:text-h2 md:leading-h2">
                 Ready to start?
               </h6>
-              <form className="flex flex-col gap-4 md:items-center">
+              <form>
                 {/* Mobile Form */}
-                <div className="md:hidden">
+                <div className="flex flex-col gap-4 md:hidden md:items-center">
                   <input
                     type="text"
                     placeholder="Enter email address"
-                    className="rounded-full px-7 py-[15px] font-sans text-body font-bold text-blue-grey shadow-md focus:outline-none md:w-[60%] lg:w-96"
+                    className="rounded-full px-7 py-[15px] font-sans text-body font-bold text-blue-grey shadow-md focus:outline-none"
                   />
                   <button
                     type="submit"
-                    className="rounded-full bg-dark-pink px-2 py-[15px] text-body font-bold tracking-[-0.115px] text-white md:w-[60%] lg:w-96"
+                    className="rounded-full bg-dark-pink px-2 py-[15px] text-body font-bold tracking-[-0.115px] text-white"
                   >
                     Schedule a Demo
                   </button>
                 </div>
                 {/* Desktop Form */}
                 <div className="hidden md:block">
-                  <div className="flex overflow-hidden rounded-full bg-[#fff]">
+                  <div className="mx-auto flex w-[600px] overflow-hidden rounded-full bg-[#fff] lg:max-w-none">
                     <input
                       type="text"
                       placeholder="Enter email address"
-                      className="px-9 py-[15px] font-sans text-body font-bold text-blue-grey shadow-md focus:outline-none"
+                      className="w-full px-9 py-[15px] font-sans text-body font-bold text-blue-grey shadow-md focus:outline-none"
                     />
                     <button
                       type="submit"
-                      className="rounded-full bg-dark-pink px-[25px] py-[15px] text-body font-bold tracking-[-0.115px] text-white"
+                      className="flex-shrink-0 rounded-full bg-dark-pink px-[25px] py-[15px] text-body font-bold tracking-[-0.115px] text-white"
                     >
                       Schedule a Demo
                     </button>
