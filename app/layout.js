@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
-      <body className="relative overflow-x-hidden">
+      <body className="relative max-w-[100vw] overflow-x-hidden bg-[#EDF3F8]">
         <Header />
         {children}
         <Footer />

@@ -20,7 +20,7 @@ const Footer = () => {
         alt="Circle"
         width={1280}
         height={1280}
-        className="absolute bottom-0 z-20 translate-x-[-16.4%] translate-y-[130%] min-[470px]:translate-y-[120%] md:right-0 md:translate-x-[40%] md:translate-y-[70%]"
+        className="pointer-events-none absolute bottom-0 z-20 translate-x-[-16.4%] translate-y-[130%] min-[470px]:translate-y-[120%] md:right-0 md:translate-x-[40%] md:translate-y-[70%]"
       />
       <div className="z-30 mx-auto flex max-w-[1600px] flex-col items-center px-8 py-10 md:flex-row md:items-center md:justify-between md:px-10 lg:px-40">
         <div className="md:flex md:gap-16">
