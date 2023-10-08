@@ -5,6 +5,7 @@ import ScheduleDemo from "@/components/ScheduleDemo";
 const About = () => {
   return (
     <>
+      {/* Circle */}
       <div className="w-full overflow-hidden">
         <div className="pointer-events-none absolute left-0 z-30 min-h-screen w-[150%] lg:w-full">
           <Image
@@ -47,20 +48,20 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* Mobile */}
+
         <Image
           src="/images/about/mobile/image-team-members.jpg"
           alt="Group of people around a coffee table working"
-          width={375}
-          height={300}
+          width={1440}
+          height={500}
           className="md:hidden"
         />
         {/* Tablet */}
         <Image
           src="/images/about/tablet/image-team-members.jpg"
           alt="Group of people around a coffee table working"
-          width={768}
-          height={267}
+          width={1440}
+          height={500}
           className="hidden md:block lg:hidden"
         />
         {/* Desktop */}
@@ -76,7 +77,7 @@ const About = () => {
             <hr className="text-blue-grey opacity-25 md:hidden" />
             <div className="space-y-8 md:grid md:grid-cols-3 md:gap-[10px] md:space-y-0">
               <div className="w-full space-y-4 text-left">
-                <hr className="text-blue-grey opacity-25" />
+                <hr className="hidden text-blue-grey opacity-25 md:block" />
                 <div>
                   <h3 className="font-sans text-[16px] leading-body text-blue-grey opacity-70">
                     Team Members
@@ -85,10 +86,10 @@ const About = () => {
                     300+
                   </h4>
                 </div>
-                <hr className="text-blue-grey opacity-25" />
+                <hr className="hidden text-blue-grey opacity-25 md:block" />
               </div>
-              <div className="w-full space-y-4 text-left">
-                <hr className="text-blue-grey opacity-25" />
+              <div className="text- w-full space-y-4">
+                <hr className="hidden text-blue-grey opacity-25 md:block" />
                 <div>
                   <h3 className="font-sans text-[16px] leading-body text-blue-grey opacity-70">
                     Offices in the US
@@ -97,10 +98,10 @@ const About = () => {
                     3
                   </h4>
                 </div>
-                <hr className="text-blue-grey opacity-25" />
+                <hr className="hidden text-blue-grey opacity-25 md:block" />
               </div>
               <div className="w-full space-y-4 text-left">
-                <hr className="text-blue-grey opacity-25" />
+                <hr className="hidden text-blue-grey opacity-25 md:block" />
                 <div>
                   <h3 className="font-sans text-[16px] leading-body text-blue-grey opacity-70">
                     Transactions Analyzed
@@ -109,7 +110,7 @@ const About = () => {
                     10M+
                   </h4>
                 </div>
-                <hr className="text-blue-grey opacity-25" />
+                <hr className="hidden text-blue-grey opacity-25 md:block" />
               </div>
             </div>
             <hr className="text-blue-grey opacity-25 md:hidden" />
