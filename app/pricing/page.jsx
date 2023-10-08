@@ -84,7 +84,7 @@ const Pricing = () => {
           />
         </div>
       </div>
-      <div className="mx-auto max-w-[1600px] space-y-12 px-6 pt-2 md:space-y-16 md:px-10 md:pt-10 lg:px-40">
+      <main className="mx-auto max-w-[1600px] space-y-12 px-6 pt-2 md:space-y-16 md:px-10 md:pt-10 lg:px-40">
         <h1 className="text-center font-serif text-h3-l leading-[36px] tracking-[-0.246px] text-blue-grey md:text-h2 md:leading-h2 md:tracking-[-0.369px] lg:text-left lg:text-h1-s lg:leading-h1-s">
           Pricing
         </h1>
@@ -122,7 +122,7 @@ const Pricing = () => {
             ]}
           />
         </div>
-      </div>
+      </main>
       <ScheduleDemo />
     </>
   );

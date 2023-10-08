@@ -31,7 +31,7 @@ export default function Home() {
               alt="Circle"
               width={780}
               height={780}
-              className="absolute right-0 top-0 z-10 hidden translate-x-[30%] translate-y-[-45%] lg:block"
+              className="pointer-events-none absolute right-0 top-0 z-10 hidden translate-x-[30%] translate-y-[-45%] lg:block"
             />
             <div className="flex flex-col gap-6 text-center md:items-center md:gap-12 md:text-left lg:items-start">
               <h1 className="text-center font-serif text-h3-l leading-[36px] tracking-[-0.246px] text-blue-grey md:w-[75%] md:text-h2 md:leading-h2 md:tracking-[-0.369px] lg:text-left lg:text-h1-l lg:leading-h1-l lg:tracking-[0.554px]">
@@ -66,7 +66,7 @@ export default function Home() {
               className="absolute bottom-0 left-0 translate-x-[-16.7%] translate-y-[30%] min-[480px]:translate-y-[20%] md:left-1/2 md:h-[780px] md:w-[780px] md:translate-x-[-50%] md:translate-y-[30%]"
             />
           </div>
-          <div className="relative mx-auto  flex max-w-[1600px] flex-col items-center gap-14 px-6 py-20 md:gap-16 md:px-10 md:py-[88px] lg:flex-row-reverse lg:px-40 lg:py-[100px]">
+          <div className="relative mx-auto flex max-w-[1600px] flex-col items-center gap-14 px-6 py-20 md:gap-16 md:px-10 md:py-[88px] lg:flex-row-reverse lg:px-40 lg:py-[100px]">
             {/* Desktop Circle */}
             <Image
               src="/images/shared/desktop/bg-pattern-circle.svg"
