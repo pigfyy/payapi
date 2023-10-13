@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Header from "@/components/Header";
+import Logos from "@/components/Logos";
 
 export default function Home() {
   return (
@@ -75,44 +75,7 @@ export default function Home() {
               height={780}
               className="pointer-events-none absolute bottom-0 left-0 hidden translate-x-[-30%] translate-y-[-8%] lg:block"
             />
-            <div className="grid grid-cols-2 place-items-center gap-8 md:grid-cols-3 md:gap-12 lg:w-[100%]">
-              <Image
-                src="/images/shared/desktop/tesla.svg"
-                alt="Tesla"
-                width={131}
-                height={17}
-              />
-              <Image
-                src="/images/shared/desktop/microsoft.svg"
-                alt="Microsoft"
-                width={148}
-                height={31}
-              />
-              <Image
-                src="/images/shared/desktop/hewlett-packard.svg"
-                alt="Hewlett Packard"
-                width={142}
-                height={27}
-              />
-              <Image
-                src="/images/shared/desktop/oracle.svg"
-                alt="Oracle"
-                width={133}
-                height={17}
-              />
-              <Image
-                src="/images/shared/desktop/google.svg"
-                alt="Google"
-                width={97}
-                height={33}
-              />
-              <Image
-                src="/images/shared/desktop/nvidia.svg"
-                alt="Nvidia"
-                width={139}
-                height={26}
-              />
-            </div>
+            <Logos />
             <div className="space-y-4 text-center md:space-y-6 lg:flex lg:w-[65%] lg:flex-col lg:items-start lg:text-left">
               <h2 className="font-serif text-h3-l leading-[36px] tracking-[-0.246px] text-white md:text-h2 md:leading-h2 md:tracking-[0.369px]">
                 Who we work with
