@@ -61,7 +61,7 @@ const Plan = ({ name, description, price, featuredPerks }) => {
         </div>
         <hr className="text-[#c0cbd5]" />
         <div className="flex w-full justify-center lg:justify-start">
-          <button className="rounded-full border-[1px] border-solid border-blue-grey px-7 py-4 font-sans text-body font-bold tracking-[-0.115px] text-blue-grey">
+          <button className="rounded-full border-[1px] border-solid border-blue-grey px-7 py-4 font-sans text-body font-bold tracking-[-0.115px] text-blue-grey hover:bg-blue-grey hover:text-white">
             Request Access
           </button>
         </div>

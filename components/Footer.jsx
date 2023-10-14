@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -24,28 +25,39 @@ const Footer = () => {
       />
       <div className="z-30 mx-auto flex max-w-[1600px] flex-col items-center px-8 py-10 md:flex-row md:items-center md:justify-between md:px-10 lg:px-40">
         <div className="md:flex md:gap-16">
-          <Image
-            src="/images/shared/desktop/logo.svg"
-            alt="PayAPI"
-            width={135}
-            height={38}
-            className="object-contain"
-          />
+          <Link href="/">
+            <Image
+              src="/images/shared/desktop/logo.svg"
+              alt="PayAPI"
+              width={135}
+              height={38}
+              className="object-contain"
+            />
+          </Link>
           <ul className="mt-10 flex flex-col items-center gap-8 md:mt-0 md:flex-row">
             <li>
-              <button className="font-sans text-body font-bold text-[#b7bcc0]">
+              <Link
+                href="/pricing"
+                className="font-sans text-body font-bold text-[#b7bcc0]"
+              >
                 Pricing
-              </button>
+              </Link>
             </li>
             <li>
-              <button className="font-sans text-body font-bold text-[#b7bcc0]">
+              <Link
+                href="/about"
+                className="font-sans text-body font-bold text-[#b7bcc0]"
+              >
                 About
-              </button>
+              </Link>
             </li>
             <li>
-              <button className="font-sans text-body font-bold text-[#b7bcc0]">
+              <Link
+                href="/contact"
+                className="font-sans text-body font-bold text-[#b7bcc0]"
+              >
                 Contact
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

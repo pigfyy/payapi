@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Logos from "@/components/Logos";
+import Link from "next/link";
+import ScheduleDemo from "@/components/ScheduleDemo";
 
 export default function Home() {
   return (
@@ -43,12 +45,20 @@ export default function Home() {
                   placeholder="Enter email address"
                   className="rounded-full bg-white px-7 py-[15px] font-sans text-body font-bold text-blue-grey shadow-md focus:outline-none md:w-[60%] lg:w-[50%]"
                 />
-                <button className="rounded-full bg-dark-pink px-2 py-[15px] text-body font-bold tracking-[-0.115px] text-white md:w-[60%] lg:w-[50%]">
+                <Link
+                  href="/contact"
+                  className="rounded-full bg-dark-pink px-2 py-[15px] text-center text-body font-bold tracking-[-0.115px] text-white md:w-[60%] lg:w-[50%]"
+                >
                   Schedule a Demo
-                </button>
+                </Link>
                 <div className="text-inherit mt-8 font-sans text-body text-light-grey md:mt-0">
                   <span>Have any questions? </span>
-                  <span className="font-bold">Contact Us</span>
+                  <Link
+                    href="/contact"
+                    className="font-bold opacity-70 hover:opacity-100"
+                  >
+                    Contact Us
+                  </Link>
                 </div>
               </div>
             </div>
@@ -86,15 +96,18 @@ export default function Home() {
                 provide developers with the tools they need to create easy and
                 accessible experiences for their users.
               </p>
-              <button className="rounded-full border-[1px] border-solid border-white px-8 py-4 text-center text-body font-bold tracking-[-0.115px] text-white md:mt-2">
+              <Link
+                href="/about"
+                className="rounded-full border-[1px] border-solid border-white px-8 py-4 text-center text-body font-bold tracking-[-0.115px] text-white hover:bg-white hover:text-blue-grey md:mt-2"
+              >
                 About Us
-              </button>
+              </Link>
             </div>
           </div>
         </div>
         {/* Advertising */}
         <div className="bg-[#EDF3F8]">
-          <div className="bg-inherit mx-auto flex max-w-[1600px] flex-col items-center gap-20 px-6 py-20 md:px-10 lg:gap-28 lg:px-40 lg:py-36">
+          <div className="bg-inherit mx-auto flex max-w-[1600px] flex-col items-center gap-20 px-6 pt-20 md:px-10 lg:gap-28 lg:px-40 lg:pt-36">
             <div className="lg:grid lg:grid-cols-2 lg:gap-2">
               <Image
                 src="/images/home/desktop/illustration-easy-to-implement.svg"
@@ -188,45 +201,9 @@ export default function Home() {
                 </div>
               </li>
             </ul>
-            <div className="flex w-full flex-col gap-6 text-center lg:flex-row lg:items-center lg:justify-between">
-              <h6 className="font-serif text-h3-l leading-[36px] tracking-[-0.246px] text-blue-grey md:text-h2 md:leading-h2">
-                Ready to start?
-              </h6>
-              <form>
-                {/* Mobile Form */}
-                <div className="flex flex-col gap-4 md:hidden md:items-center">
-                  <input
-                    type="text"
-                    placeholder="Enter email address"
-                    className="rounded-full px-7 py-[15px] font-sans text-body font-bold text-blue-grey shadow-md focus:outline-none"
-                  />
-                  <button
-                    type="submit"
-                    className="rounded-full bg-dark-pink px-2 py-[15px] text-body font-bold tracking-[-0.115px] text-white"
-                  >
-                    Schedule a Demo
-                  </button>
-                </div>
-                {/* Desktop Form */}
-                <div className="hidden md:block">
-                  <div className="mx-auto flex w-[600px] overflow-hidden rounded-full bg-[#fff] lg:max-w-none">
-                    <input
-                      type="text"
-                      placeholder="Enter email address"
-                      className="w-full px-9 py-[15px] font-sans text-body font-bold text-blue-grey shadow-md focus:outline-none"
-                    />
-                    <button
-                      type="submit"
-                      className="flex-shrink-0 rounded-full bg-dark-pink px-[25px] py-[15px] text-body font-bold tracking-[-0.115px] text-white"
-                    >
-                      Schedule a Demo
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
           </div>
         </div>
+        <ScheduleDemo />
       </main>
     </>
   );

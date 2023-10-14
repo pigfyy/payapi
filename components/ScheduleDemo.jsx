@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ScheduleDemo = () => {
@@ -14,12 +15,12 @@ const ScheduleDemo = () => {
             placeholder="Enter email address"
             className="rounded-full px-7 py-[15px] font-sans text-body font-bold text-blue-grey shadow-md focus:outline-none"
           />
-          <button
-            type="submit"
+          <Link
+            href="/contact"
             className="rounded-full bg-dark-pink px-2 py-[15px] text-body font-bold tracking-[-0.115px] text-white"
           >
             Schedule a Demo
-          </button>
+          </Link>
         </div>
         {/* Desktop Form */}
         <div className="mx-auto hidden w-[500px] overflow-hidden rounded-full bg-[#fff] md:flex md:shadow-lg lg:max-w-none lg:shadow-xl">
@@ -28,12 +29,12 @@ const ScheduleDemo = () => {
             placeholder="Enter email address"
             className="w-full px-9 py-[15px] font-sans text-body font-bold text-blue-grey shadow-md focus:outline-none"
           />
-          <button
-            type="submit"
+          <Link
+            href="/contact"
             className="flex-shrink-0 rounded-full bg-dark-pink px-[25px] py-[15px] text-body font-bold tracking-[-0.115px] text-white"
           >
             Schedule a Demo
-          </button>
+          </Link>
         </div>
       </form>
     </div>
